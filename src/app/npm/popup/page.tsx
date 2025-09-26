@@ -1,18 +1,13 @@
 "use client";
 
-import { initializeSDK, SDKInitConfig, Attributes } from "@pier39/web-sdk";
+import { initializeSDK, Attributes } from "@pier39/web-sdk";
 
-const sdk = initializeSDK({ isTestMode: true },() => {
-  console.log('SDK initialized');
-},
-(error) => {
-  console.log('SDK initialization error', error);
-});
+const sdk = initializeSDK({ isTestMode: false });
 
 export default function HelloWorld() {
 
     const handleShowPlacement = () => {
-        sdk.showPlacement("9221178e-e0ca-4e46-bd91-8b176a9e3516", {
+        sdk.showPlacement("1dbfb99e-6479-45f1-90d4-a106dc3ddbcb", {
           orderId: "6687787024554"
         });
     }

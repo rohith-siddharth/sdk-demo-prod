@@ -7,10 +7,14 @@ export default function HelloWorld() {
         console.log("Showing placement");
         
         console.log('P39', (window as any).P39);
-        (window as any).P39?.showPlacement("9221178e-e0ca-4e46-bd91-8b176a9e3516", {
+        (window as any).P39?.showPlacement("1dbfb99e-6479-45f1-90d4-a106dc3ddbcb", {
             orderId: "6687787024554"
         });
     }
+
+    window.P39?.showPlacement("__PLACEMENT_ID__", {
+      orderId: "__SHOPIFY_ORDER_ID__"
+    });
 
   return (
     <div className="min-h-screen flex bg-gray-100" style={{ padding: '20px' }}>
@@ -25,3 +29,5 @@ export default function HelloWorld() {
     </div>
   );
 }
+
+
