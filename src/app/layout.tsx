@@ -24,6 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Regular HTML script tag - loads globally */}
+        <script
+          async
+          dangerouslySetInnerHTML={{
+            __html: `
+              (()=>{"use strict";!function(e,i){var n={isTestMode:true},t=[],o=null;e.P39={showPlacement:function(e,i){if(void 0===i&&(i={}),o)return o.showPlacement(e,i);t.push({m:"showPlacement",a:[e,i]})},removePlacement:function(e){if(o)return o.removePlacement(e);t.push({m:"removePlacement",a:[e]})}};var r=i.createElement("script");r.async=true,r.src="https://cdn.personapay.ai/assets/pier39-web-sdk/0.0.1/sdk.js",r.onload=function(){var i=e.P39SDK;if(i&&"function"==typeof i.initializeSDK)try{if(!(o=i.initializeSDK(n)))return void console.error("SDK initialization failed");for(var r=0;r<t.length;r++){var a=t[r];a&&o[a.m]&&o[a.m].apply(o,a.a)}t.length=0}catch(e){console.error("SDK initialization error:",e)}else console.error("script failed to load")},i.head.appendChild(r)}(window,document)})();  
+            `
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
