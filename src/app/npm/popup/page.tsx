@@ -8,7 +8,7 @@ export default function HelloWorld() {
 
     const handleShowPlacement = () => {
         sdk.showPlacement("1dbfb99e-6479-45f1-90d4-a106dc3ddbcb", {
-          orderId: "6687787024554"
+          orderId: "668778702455"
         });
     }
 
