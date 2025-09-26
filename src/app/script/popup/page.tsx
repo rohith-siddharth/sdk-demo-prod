@@ -12,10 +12,6 @@ export default function HelloWorld() {
         });
     }
 
-    window.P39?.showPlacement("__PLACEMENT_ID__", {
-      orderId: "__SHOPIFY_ORDER_ID__"
-    });
-
   return (
     <div className="min-h-screen flex bg-gray-100" style={{ padding: '20px' }}>
       <div className="">
