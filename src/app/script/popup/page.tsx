@@ -7,9 +7,7 @@ export default function HelloWorld() {
         console.log("Showing placement");
         
         console.log('P39', (window as any).P39);
-        (window as any).P39?.showPlacement("1dbfb99e-6479-45f1-90d4-a106dc3ddbcb", {
-            orderId: "6687787024554"
-        });
+        (window as any).P39?.showPlacement("cd8b5d25-1d17-4237-a14b-a72a50d71f48", {});
     }
 
   return (
