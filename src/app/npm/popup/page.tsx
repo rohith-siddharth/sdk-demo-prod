@@ -7,7 +7,16 @@ const sdk = initializeSDK({ isTestMode: false });
 export default function HelloWorld() {
 
     const handleShowPlacement = () => {
-        sdk.showPlacement("cd8b5d25-1d17-4237-a14b-a72a50d71f48", {});
+        sdk.showPlacement("cd8b5d25-1d17-4237-a14b-a72a50d71f48", {
+          orderId: "6687787024554",
+          orderValue: 100,
+          orderCurrency: "USD",
+          customerEmail: "test@test.com",
+          customerPhone: "1234567890",
+          customerFirstName: "John",
+          customerLastName: "Doe",
+          customerZipCode: "12345",
+        });
     }
 
   return (

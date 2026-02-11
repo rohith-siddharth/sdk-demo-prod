@@ -7,7 +7,16 @@ export default function HelloWorld() {
         console.log("Showing placement");
         
         console.log('P39', (window as any).P39);
-        (window as any).P39?.showPlacement("cd8b5d25-1d17-4237-a14b-a72a50d71f48", {});
+        (window as any).P39?.showPlacement("cd8b5d25-1d17-4237-a14b-a72a50d71f48", {
+          orderId: "6687787024554",
+          orderValue: 100,
+          orderCurrency: "USD",
+          customerEmail: "test@test.com",
+          customerPhone: "1234567890",
+          customerFirstName: "John",
+          customerLastName: "Doe",
+          customerZipCode: "12345",
+        });
     }
 
   return (
