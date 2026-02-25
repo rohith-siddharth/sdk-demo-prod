@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@pier39/web-sdk": "0.0.5",
+    "@pier39/web-sdk": "0.0.6",
     "next": "15.1.9",
     "react": "19.1.0",
     "react-dom": "19.1.0"

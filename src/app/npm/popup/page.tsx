@@ -16,6 +16,20 @@ export default function HelloWorld() {
           customerFirstName: "John",
           customerLastName: "Doe",
           customerZipCode: "12345",
+          orderProducts: [
+            {
+              name: "Product Name",
+              type: "product",
+              price: 100,
+              quantity: 1,
+              metadata: {
+                "product_id": "1234567890",
+              }
+            },
+          ],
+          metadata: {
+            
+          }
         });
     }
 
